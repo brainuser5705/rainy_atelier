@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rainy Atelier</title>
+        <style>
+            @font-face {
+                font-family: jost;
+                src: url(Jost/static/Jost-Regular.ttf);
+            }
+            @font-face {
+                font-family: jost;
+                src: url(Jost/static/Jost-Bold.ttf);
+                font-weight: bold;
+            }
+            html, body{
+                height: 100%;
+                margin: 0;
+            }
+            #parent-container{
+
+                background-image: url("Rain_animation-1.gif");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+
+                height: calc(100% + 4em);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                font-family: jost;
+                font-weight: bold;
+                color: #A6DDEB;
+            }
+            #top-container{
+                height: calc(100%);
+            }
+            #top-text{
+                position: relative;
+                top: 40%;
+            }
+            #top-text-title{
+                font-size: 8em;
+            }
+            #top-text-caption{
+                position: relative;
+                font-size: 1.2em;
+                top: -1.5em;
+                color: white;
+                text-align: right;
+            }
+            #bottom-container{
+                font-size: 2em;
+                padding: 0.5em;
+            }
+            #bottom-text:hover{
+                color: #7da6b0;
+            }
+            a{
+                color: inherit;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="parent-container"/>
+            <div id="top-container">
+                <div id="top-text">
+                    <div id="top-text-title">my rainy atelier</div>
+                    <div id="top-text-caption">an illustration and concept design portfolio</div>
+                </div>
+            </div>
+            <div id="bottom-container">
+                <div id="bottom-text">
+                    <a href="page.html">Enter</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
