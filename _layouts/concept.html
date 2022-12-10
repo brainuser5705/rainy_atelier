@@ -1,0 +1,21 @@
+---
+layout: base
+---
+
+<h1>{{ page.label }}: {{ page.title }}</h1> 
+
+{% assign art = site.data.concepts[page.dir] %}
+
+<img src="/artwork/concepts/{{ page.dir }}/{{ art.cover }}">
+
+{% for final_art in art.final %}
+    <img src="/artwork/concepts/{{ page.dir }}/{{ final_art }}">
+{% endfor %}
+
+<h2>Process</h2>
+
+{% for process_art in art.process %}
+    <img src="/artwork/concepts/{{ page.dir }}/{{ process_art }}">
+{% endfor %}
+
+{{ content }}

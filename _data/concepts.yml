@@ -1,0 +1,13 @@
+passage-of-time:
+  cover: img1.png
+  final:
+    - img2.png
+  process:
+    - img3.jpg
+
+master-of-disguise:
+  cover: img1.png
+  final:
+    - img2.jpg
+  process:
+    - img3.png

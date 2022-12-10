@@ -1,0 +1,12 @@
+---
+layout: base
+title: CONCEPT ART
+---
+
+{% for concept in site.concepts %}
+    <div>
+        {% assign art = site.data.concepts[concept.dir] %}
+        <img src="/artwork/concepts/{{ concept.dir }}/{{ art.cover }}">
+        <a href="{{ concept.url }}">{{ concept.title }}</a>
+    </div>
+{% endfor %}
